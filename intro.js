@@ -1,14 +1,3 @@
-console.info("my first js style")
-
-var name ="Anca"
-var employed = true;
-
-console.warn("employed");
-console.warn(employed);
-
-console.info("Name:");
-console.info(name);
-
 function getWelcolmeMsg() {
     console.log("inside wellcome message")
     return "Wellcome to my site!";
@@ -33,25 +22,10 @@ var color = getColor();
 summaryElement.style.color = color;
 
 
-//first example - end
 
-}
-function hideHomePage(){
-    var el = document.getElementById('home-page');
-    el.style.display= 'none';
-}
-function showSkillsPage(){
-    document.getElementById("skills-page").style.display = 'block';
-}
-function clickOnSkills(){
-    //hideHomePage();
-    //showSkillsPage();
-    hidePage('home-page');
-    hidePage('languages-page');
-    hidePage('about-page');
-    showPage('skills-page');
-}
-//first example - end
+
+
+
 
 function hidePage(page){
     var el = document.getElementById(page);
