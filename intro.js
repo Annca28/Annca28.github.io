@@ -66,7 +66,11 @@ function showSkills() {
         {name: 'nodejs', endorsements: 3,  endorsedBy:'Vasile I'}
     ];
 
-    var htmlSkills = skills.map(function(skill, index) {
+skills.sort(function(a, b){
+    return b.endorsements - a.endorsements;
+});
+
+    var htmlSkills = skills.map(function(skill) {
         var endorsedBy = skill.endorsedBy ? ' - ' + skill.endorsedBy : '';
         var endorsements = `<span class="endorsements">(${skill.endorsements}${skill.endorsedBy})</span>`;
         return '<li>' + skill.name.toUpperCase() + endorsements + '</li>';
